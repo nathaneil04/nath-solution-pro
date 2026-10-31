@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio and engineering practice of Nath Solution — Nathaniel Sumaoang, Freelancer Software Developer.">
+  <title>NATH SOLUTION — Freelancer Software Developer</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><rect x='1' y='1' width='38' height='38' rx='8' fill='%230f172a' stroke='%2338bdf8' stroke-width='1.5'/><path d='M10 27V13L19 27V13' stroke='%2338bdf8' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/><path d='M30 14.5C28.5 13.2 25 13 24 15.5C22.8 18.5 30.5 18 29.5 21.5C28.5 24.8 24.8 24.8 23 23.5' stroke='%23f8fafc' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/><circle cx='30' cy='24' r='1.5' fill='%2338bdf8'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand">
+        <svg class="brand-mark" width="38" height="38" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="NS Logo">
+          <rect x="1" y="1" width="38" height="38" rx="8" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="1.5"/>
+          <path d="M10 27V13L19 27V13" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M30 14.5C28.5 13.2 25 13 24 15.5C22.8 18.5 30.5 18 29.5 21.5C28.5 24.8 24.8 24.8 23 23.5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="30" cy="24" r="1.5" fill="var(--accent)"/>
+        </svg>
+        <div>
+          <div class="brand-name">NATHANIEL SUMAOANG</div>
+          <div class="brand-sub">Freelancer Software Developer</div>
+        </div>
+      </div>
+      <div class="top-actions">
+        <span class="status-chip"><span class=""></span> Always Active</span>
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">◐</button>
+        <button id="mobileNavToggle" class="icon-btn mobile-only" aria-label="Open navigation">☰</button>
+      </div>
+    </header>
+
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-label">Pages</div>
+      <nav id="mainNav">
+        <a href="#work" data-page="work" class="nav-item active"><span class="nav-icon">⌘</span> Work</a>
+        <a href="#projects" data-page="projects" class="nav-item"><span class="nav-icon">▦</span> Projects</a>
+        <a href="#tech-stack" data-page="tech-stack" class="nav-item"><span class="nav-icon">◈</span> Tech Stack</a>
+        <a href="#services" data-page="services" class="nav-item"><span class="nav-icon">✦</span> Services</a>
+        <a href="#rates" data-page="rates" class="nav-item"><span class="nav-icon">₱</span> Rates & Packages</a>
+        <a href="#book-call" data-page="book-call" class="nav-item"><span class="nav-icon">↗</span> Book a Call</a>
+        <a href="#contact" data-page="contact" class="nav-item"><span class="nav-icon">◎</span> Contact</a>
+      </nav>
+
+      <div class="sidebar-card">
+        <span class="eyebrow">Direct Contact</span>
+        <a href="mailto:nathsumaoang@gmail.com">nathsumaoang@gmail.com</a>
+        <span>Paniqui, Tarlac / Remote</span>
+      </div>
+      <div class="sidebar-footer">NATH SOLUTION / 2026</div>
+    </aside>
+
+    <main class="workspace">
+      <section id="view-work" class="page active">
+        <div class="canvas-grid">
+          <div class="window-card hero-window">
+            <div class="window-bar">
+              <div class="dots"><i></i><i></i><i></i></div>
+              <span></span>
+              <span class="window-state"></span>
+            </div>
+            <div class="hero-grid">
+              <div class="hero-copy">
+                <div class="eyebrow">Full Stack Software Development</div>
+                <h1>Building Seamless <span>Digital Solutions.</span></h1>
+                <p><strong>Nath Solution</strong> Architects secure, user-centric UI/UX systems and reusable APIs while actively managing deployment risks and ensuring continuous production health.</p>
+                <div class="actions">
+                  <a href="#book-call" data-page="book-call" class="btn primary">Book a Call <span>→</span></a>
+                  <a href="#projects" data-page="projects" class="btn ghost">Explore Projects</a>
+                </div>
+                <div class="mini-metrics">
+                  <div><strong>04</strong><span>Featured Builds</span></div>
+                  <div><strong>07</strong><span>Portfolio Pages</span></div>
+                  <div><strong>24/7</strong><span>Availability</span></div>
+                </div>
+              </div>
+              <div class="hero-art">
+                <div class="orb orb-a"></div>
+                <div class="orb orb-b"></div>
+                <div class="art-grid"></div>
+                <div class="code-panel">
+                  <div class="code-head">system.ts <span>●</span></div>
+                  <pre><code>const solution = {
+  ui: "human-first",
+  api: "reusable",
+  data: "secure",
+  deploy: "continuous"
+};</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="window-card">
+            <div class="window-bar"><span>package-ads</span><span class="window-state">AUTO</span></div>
+            <div class="package-carousel" id="packageCarousel">
+              <article class="package-slide active" style="--bg:url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=80')">
+                <div><span class="badge">Starter Deal</span><h3>Landing Page Development</h3><div class="price">₱5,000 <small>/ one-time</small></div><p>Single-page responsive design equipped with smooth animations, contact forms, and swift loading speeds.</p><a class="btn primary" href="#book-call" data-page="book-call">Select Package →</a></div>
+              </article>
+              <article class="package-slide" style="--bg:url('https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=1600&q=80')">
+                <div><span class="badge">Most Popular</span><h3>Business Website Package</h3><div class="price">₱10,000 <small>/ one-time</small></div><p>Up to 5 custom pages, content management system (CMS), admin dashboard, and search engine optimization.</p><a class="btn primary" href="#book-call" data-page="book-call">Select Package →</a></div>
+              </article>
+              <article class="package-slide" style="--bg:url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1600&q=80')">
+                <div><span class="badge">Enterprise Grade</span><h3>Custom Full-Stack System</h3><div class="price">₱15,000+ <small>/ Varies by scope</small></div><p>Tailored REST/GraphQL database APIs, user authentication, inventory systems, and dedicated technical support.</p><a class="btn primary" href="#book-call" data-page="book-call">Select Package →</a></div>
+              </article>
+              <div class="carousel-dots" id="carouselDots"><button class="active"></button><button></button><button></button></div>
+            </div>
+          </div>
+
+          <div class="window-card profile-window">
+            <div class="window-bar"><span>profile directory</span><span>01 / developer</span></div>
+            <div class="profile-grid">
+              <div class="avatar-wrap">
+                <img src="nath.jpg" alt="Developer Profile Picture" onerror="this.style.display='none';this.nextElementSibling.style.display='grid';">
+                <div class="avatar-fallback">NS</div>
+              </div>
+              <div class="profile-item"><span>Freelancer</span><strong>Full Stack Software & Web Developer</strong></div>
+              <div class="profile-item"><span>Core Specialization</span><strong>Web Apps, Software Systems & Website</strong></div>
+              <div class="profile-item"><span>Bachelor's Degree</span><strong>BS. Computer Science</strong></div>
+              <div class="profile-item"><span>Location</span><strong>Paniqui, Tarlac / Remote</strong></div>
+              <div class="profile-item"><span>Direct Contact</span><a href="mailto:nathsumaoang@gmail.com">nathsumaoang@gmail.com</a></div>
+              <div class="profile-item"><span>Availability</span><strong>Always Active</strong></div>
+            </div>
+          </div>
+
+          <div class="window-card">
+            <div class="window-bar"><span>3D UI</span><span>GPU / REALTIME</span></div>
+            <div class="webgl-wrap"><canvas id="webglCanvas"></canvas><div class="canvas-label">WebGL & 3D Interactive Canvas</div></div>
+            <div class="window-copy"><h2>WebGL & 3D Interactive Canvas</h2><p>Real-time WebGL rendering demonstrating frontend performance and GPU acceleration capabilities.</p></div>
+          </div>
+
+          <div class="window-card">
+            <div class="window-bar"><span>legacy redesign</span><span>COMPARE</span></div>
+            <div class="ba-slider" id="baSlider">
+              <img src="donn.jpg" class="ba-img" alt="Before UI Transformation">
+              <div class="ba-after" id="baAfter"><img src="donncode.png" class="ba-img" alt="Modern Redesign"></div>
+              <div class="ba-handle" id="baHandle"><span>↔</span></div>
+              <div class="ba-label left">BEFORE</div><div class="ba-label right">AFTER</div>
+            </div>
+            <div class="window-copy"><h2>Legacy Redesign & Refactoring</h2><p>Drag the interactive slider to view UI modernization and performance overhaul before and after application refactoring.</p></div>
+          </div>
+
+          <div class="window-card">
+            <div class="window-bar"><span>media walkthroughs</span><span>MEDIA / 02</span></div>
+            <div class="video-grid">
+              <article class="video-card"><div class="video-frame"><iframe src="https://www.youtube.com/embed/ek7hmv5PVV8" title="Full Stack PERN Admin Dashboard Walkthrough" allowfullscreen></iframe></div><span class="tag">Web Applications</span><h3>Full Stack PERN Admin Dashboard Walkthrough</h3><p>In-depth full-stack engineering course covering the PERN stack (PostgreSQL, Express, React, Node), state management, database schemas, and AI-assisted development.</p></article>
+              <article class="video-card"><div class="video-frame"><iframe src="https://www.youtube.com/embed/PTfZcN20fro" title="GraphQL vs REST: API Architecture Comparison" allowfullscreen></iframe></div><span class="tag">Backend & APIs</span><h3>GraphQL vs REST: API Architecture Comparison</h3><p>Architectural breakdown comparing RESTful endpoints and GraphQL schemas, queries, mutations, and fetching data from multiple sources.</p></article>
+            </div>
+          </div>
+
+          <div class="window-card">
+            <div class="window-bar"><span>my engineering roles</span><span>MATRIX</span></div>
+            <div class="table-scroll"><table><thead><tr><th>Role Title</th><th>Core Focus</th><th>Key Responsibilities</th><th>Deliverables</th></tr></thead><tbody>
+              <tr><td><strong>UI/UX Architect / Developer</strong></td><td>System Architecture & Team Leadership</td><td>Design end-to-end system workflow, code reviews, and API contracts.</td><td>Production Releases, Tech Specs</td></tr>
+              <tr><td><strong>Frontend Engineering</strong></td><td>UI/UX Implementation & Client Logic</td><td>Develop responsive frontend interfaces with optimized rendering performance.</td><td>Design System, SPA Frontend</td></tr>
+              <tr><td><strong>Backend & Database</strong></td><td>Databases, Security & DevOps Pipelines</td><td>Manage relational databases, CI/CD deployment automation, and server logic.</td><td>REST APIs, Vercel & Netify Deployments</td></tr>
+            </tbody></table></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="view-projects" class="page">
+        <div class="page-heading"><span class="eyebrow">My Portfolio</span><h2>Featured Projects</h2><p>Selected full stack software applications, SaaS platforms, and enterprise solutions.</p></div>
+        <div class="project-grid">
+          <a class="project-card" href="https://graquins-ensemble-studio.vercel.app/" target="_blank" rel="noopener">
+            <span class="project-index">01</span><span class="tag">Full Stack Architecture Firm Website</span><h3>GraQuins Ensemble Studio</h3><p>Custom outfit catalog and fashion showcase with dynamic product viewing and seamless client inquiries.</p><div class="techs"><span>HTML5, CSS, JS</span><span>Backend API</span><span>PostgreSQL</span></div><b>View Live Project →</b>
+          </a>
+          <a class="project-card" href="https://edumind-ai-snowy.vercel.app/" target="_blank" rel="noopener">
+            <span class="project-index">02</span><span class="tag">AI Powered Educational Assistant System</span><h3>EduMind AI</h3><p>Headless e-commerce architecture integrated with automated payment gateways and inventory management.</p><div class="techs"><span>Next.js</span><span>AI API Key</span><span>HTML5, CSS, JS</span></div><b>View Live Project →</b>
+          </a>
+          <a class="project-card" href="https://villanueva-repair-shop.vercel.app/" target="_blank" rel="noopener">
+            <span class="project-index">03</span><span class="tag">Repairshop Management System</span><h3>Villanueva Repair Shop</h3><p>Digital storefront and service portal for a device repair business featuring online quote requests and repair status tracking.</p><div class="techs"><span>TypeScript</span><span>HTML5, Tailwind CSS, JS</span><span>MySQLite</span></div><b>View Live Project →</b>
+          </a>
+          <a class="project-card" href="https://musubi-by-yb.vercel.app/" target="_blank" rel="noopener">
+            <span class="project-index">04</span><span class="tag">Full-Stack Business Website</span><h3>MUSUBI BY YB</h3><p>MUSUBI BY YB is a web-based ordering and promotional platform for a local food venture in Paniqui, Tarlac, serving fresh, handcrafted musubi prepared to order by Chef YB.</p><div class="techs"><span>Figma UI</span><span>HTML5, Tailwind CSS, JS</span><span>MySQLite</span></div><b>View Live Project →</b>
+          </a>
+        </div>
+      </section>
+
+      <section id="view-tech-stack" class="page">
+        <div class="page-heading"><span class="eyebrow">Tools & Infrastructure</span><h2>My Tech Stack</h2><p>Modern technology stack engineered for scale, maintainability, and exceptional developer experience.</p></div>
+        <div class="stack-grid">
+          <article class="stack-card"><span>01. Frontend</span><p>Building fluid, accessible, and high-performance user interfaces.</p><div class="pill-cloud"><i>Figma UI</i><i>JavaScript</i><i>TypeScript</i><i>React.js</i><i>Next.js</i><i>HTML5</i><i>Tailwind CSS</i></div></article>
+          <article class="stack-card"><span>02. Backend & Databases</span><p>Designing secure microservices, REST/GraphQL APIs, and database schemas.</p><div class="pill-cloud"><i>Node.js</i><i>Express.js</i><i>Python</i><i>PostgreSQL</i><i>Turso</i><i>Supabase</i></div></article>
+          <article class="stack-card"><span>03. Cloud & DevOps</span><p>Automating CI/CD deployment pipelines and container management.</p><div class="pill-cloud"><i>Vercel / Netlify</i><i>GitHub Actions</i><i>Nginx</i></div></article>
+          <article class="stack-card"><span>04. Quality & Workflow</span><p>Ensuring high code quality through testing and structured workflows.</p><div class="pill-cloud"><i>Git / GitHub</i><i>Postman</i><i>Figma to Code</i></div></article>
+        </div>
+      </section>
+
+      <section id="view-services" class="page">
+        <div class="page-heading"><span class="eyebrow">Services Scope</span><h2>Full Stack Software Development Capabilities</h2><p>Tailored digital engineering services for startups, growing companies, and enterprise initiatives.</p></div>
+        <div class="services-grid">
+          <article class="service-card"><span>01.</span><h3>Full Stack Web Applications</h3><p>End-to-end web application development built for high concurrency.</p></article>
+          <article class="service-card"><span>02.</span><h3>API Design & Integration</h3><p>Clean, well-documented RESTful and GraphQL APIs with robust authentication, role-based access control, and third-party integrations.</p></article>
+          <article class="service-card"><span>03.</span><h3>Legacy Refactoring & Redesign</h3><p>Modernizing legacy codebases into responsive, accessible web solutions while optimizing runtime execution speeds.</p></article>
+          <article class="service-card"><span>04.</span><h3>Technical Consulting</h3><p>Architecture reviews, tech stack evaluation, cloud deployment strategies, and developer workflow optimization.</p></article>
+        </div>
+      </section>
+
+      <section id="view-rates" class="page">
+        <div class="page-heading center"><span class="eyebrow">Rates & Packages</span><h2>Choose a package tailored to your project's needs.</h2></div>
+        <div class="pricing-grid">
+          <article class="pricing-card"><h3>Landing Page</h3><p>Ideal for personal branding or simple products.</p><div class="price">₱5,000 <small>/ one-time</small></div><ul><li>✓ 1 Page Modern Design</li><li>✓ Mobile Responsive</li><li>✓ Contact Form</li></ul><a href="#book-call" data-page="book-call" class="btn ghost full">Select This</a></article>
+          <article class="pricing-card featured"><div class="popular">MOST POPULAR</div><h3>Business Website</h3><p>Perfect for small and medium-sized businesses.</p><div class="price">₱10,000 <small>/ one-time</small></div><ul><li>✓ Up to 5 Pages</li><li>✓ CMS / Admin Panel</li><li>✓ Basic SEO Optimization</li></ul><a href="#book-call" data-page="book-call" class="btn primary full">Select This</a></article>
+          <article class="pricing-card"><h3>Custom Full-Stack System</h3><p>Complex web apps, e-commerce, or database systems.</p><div class="price">₱15,000+ <small>/ Varies by scope</small></div><ul><li>✓ Custom Database & API</li><li>✓ User Authentication System</li><li>✓ Priority Technical Support</li></ul><a href="#book-call" data-page="book-call" class="btn ghost full">Select This</a></article>
+        </div>
+      </section>
+
+      <section id="view-book-call" class="page">
+        <div class="page-heading"><span class="eyebrow">Schedule Consultation</span><h2>Tell me about your project.</h2><p>Let's discuss your project requirements, technical specifications, and delivery timelines.</p></div>
+        <form id="bookCallForm" class="form-panel">
+          <div class="form-grid">
+            <label>Your Name<input name="full_name" type="text" placeholder="Full Name" required></label>
+            <label>Email Address<input name="email" type="email" placeholder="Active Email / Gmail" required></label>
+            <label>Project Type<select name="project_type"><option>Full Stack Web Application</option><option>Frontend Website / App</option><option>Custom Full Stack System</option></select></label>
+            <label>Target Timeline<select name="target_timeline"><option>Immediate</option><option>1 month above</option><option>Flexible schedule</option></select></label>
+            <label class="wide">Project Overview & Goals<textarea name="project_overview" rows="6" placeholder="Describe your software objectives, technical needs, or current bottlenecks..."></textarea></label>
+          </div>
+          <button type="submit" class="btn primary">Request Scheduled Call →</button>
+        </form>
+      </section>
+
+      <section id="view-contact" class="page">
+        <div class="page-heading"><span class="eyebrow">Get in Touch</span><h2>Contact</h2><p>Have a project in mind or want to collaborate? Send a message directly.</p></div>
+        <div class="contact-grid">
+          <div class="contact-panel"><span class="eyebrow">Direct Contact Details</span><a href="mailto:nathsumaoang@gmail.com">nathsumaoang@gmail.com</a><span>Location: Paniqui, Tarlac / PH</span><span>Availability: Always Active</span></div>
+          <form id="contactForm" class="form-panel"><label>Name<input name="name" type="text" required></label><label>Email<input name="email" type="email" required></label><label>Message<textarea name="message" rows="7" required></textarea></label><button type="submit" class="btn primary full">Send Message</button></form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>© 2026 NATH SOLUTION Freelancer Software Developer. All rights reserved.</span>
+      <span>Nathaniel Sumaoang | Freelancer Software Developer</span>
+    </footer>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
